@@ -1,0 +1,254 @@
+body {
+
+
+			text-align: center;
+			background-image:
+/* url("https://blog.floydhub.com/content/images/2019/04/romain-vignes-53940-unsplash.jpg"); */
+url("https://cf.shopee.ph/file/af2b7c16855a92ec2d7f75619680ea3b");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+		}
+
+/* .bgimage{
+    background-color: #FF6F61;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width:100%;
+    height: 100%;
+} */
+html{
+	scroll-behavior: smooth;
+}
+.nav{
+	font-family: 'Bakbak One', cursive;
+}
+.n{
+	height: 60px;
+}
+.m{
+	border: 2px;
+}
+.bgimage{
+margin-top: 100px;
+}
+.headerset{
+    padding-top:50px;
+
+    /* box-sizing: border-box; */
+		color: white;
+		background-color: black;
+		opacity: .8;
+		width: 100px;
+		height: 350px;
+		/* font-family: 'Bakbak One', cursive; */
+		font-family: Copperplate, Papyrus, fantasy;
+}
+.qwe{
+	background-color: #ffd699;
+	color: black;
+
+
+}
+/* .abc{
+	font-family: Copperplate, Papyrus, fantasy;
+} */
+#section1{
+	background-color: black;
+	opacity: .8;
+	color: white;
+	padding-bottom: 30px;
+/* font-family: 'Bakbak One', cursive; */
+font-family: Copperplate, Papyrus, fantasy;
+
+}
+
+#section2{
+	background-color: black;
+	opacity: .8;
+	color: white;
+	padding-bottom: 30px;
+/* font-family: 'Bakbak One', cursive; */
+font-family: Copperplate, Papyrus, fantasy;
+}
+#section3{
+	background-color: black;
+	opacity: .8;
+	color: white;
+	padding-bottom: 30px;
+/* font-family: 'Bakbak One', cursive; */
+font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* #section2{
+	background-color: black;
+	opacity: .8;
+	color: white;
+	padding-bottom: 30px;
+font-family: 'Bakbak One', cursive;
+} */
+
+.headerset h1{
+    font-size: 72px;
+    font-weight: bold;
+    padding-bottom: 50px;
+		/* font-family: 'Bakbak One', cursive; */
+		font-family: Copperplate, Papyrus, fantasy;
+}
+
+/*........input section.......*/
+.container h2{
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.row{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  .custom-radio-btn {
+    --size: 25px;
+    min-width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* changes from the video   */
+
+    margin: 0 10px;
+    position: relative;
+    padding-left: var(--size);
+    display: inline-flex;
+
+
+  }
+
+  .custom-radio-btn input {
+    display: none;
+  }
+
+  /* handle if you want label on the left of the checkmark instead */
+
+  .custom-radio-btn.left {
+    padding-left: 0;
+    padding-right: var(--size);
+  }
+
+  /* label  */
+
+  .custom-radio-btn .label {
+    margin-left: 5px;
+  }
+
+  .custom-radio-btn.left .label {
+    margin: 0 5px;
+  }
+
+  .custom-radio-btn[aria-label]::after {
+    content: attr(aria-label);
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .browse{
+    padding:5px;
+    /* background: rgba(236, 233, 233, 0.842); */
+		background: rgba(100,149,237,2);
+    color: white;
+  }
+	input[name="file"] {
+  width: 350px;
+	font-size: 22px;
+	border-radius: 6px;
+
+}
+
+  .browse:hover {
+    background: #1E90FF;
+    cursor: pointer;
+    }
+  .upload{
+
+    background: rgba(236, 233, 233, 0.842);
+		color: black;
+		font-size: 21px;
+		margin-left: -500px;
+		border-radius: 6px;
+
+  }
+  .upload:hover{
+
+     background-color: white;
+
+  }
+
+  /* checkmark */
+
+  .custom-radio-btn .checkmark {
+    --gap: 3px;
+    --border: 2px;
+    --check-color: #4682B4;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    /* changes from the video  */
+
+    border: var(--border) solid #444;
+    padding: var(--gap);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .custom-radio-btn.left .checkmark {
+    left: auto;
+    right: 0;
+  }
+
+  .custom-radio-btn input:checked ~ .checkmark {
+    /* changes from the video  */
+
+    /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+      circle at center,
+      var(--check-color)
+       /* the size of the check mark is determined by subtracting from the size of the circle
+       the border(both sides) and the gap(both sides) than dividing it by 2 to get the radius of the circle        */
+         calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2),
+      rgba(255, 255, 255, 0) 0);
+  }
+
+/*....display extracted text...*/
+#text  p {
+  font: arial;
+  font-size: 14px;
+  background-color: white ;
+}
+
+/*....display output...*/
+#output  p {
+  font: arial;
+  font-size: 14px;
+  background-color: white ;
+  border: black;
+}
